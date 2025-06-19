@@ -34,6 +34,7 @@ This site is built using **HTML**, **CSS**, and **JavaScript** to showcase my sk
 ## 📂 Project Structure
 
 portfolio-website/
+
 ├── index.html
 ├── about.html
 ├── projects.html

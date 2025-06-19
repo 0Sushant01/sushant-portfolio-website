@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact | Sushant More</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header>
+    <div class="container nav-container">
+      <h1 class="logo"><a href="index.html">Sushant<span>.</span></a></h1>
+      <button id="menu-btn">&#9776;</button>
+      <nav id="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="projects.html">Projects</a>
+        <a class="active" href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <h2 class="section-title">Get in Touch</h2>
+
+    <form id="contactForm" novalidate>
+      <label>
+        Name
+        <input type="text" id="name" required />
+      </label>
+
+      <label>
+        Email
+        <input type="email" id="email" required />
+      </label>
+
+      <label>
+        Message
+        <textarea id="message" rows="5" required></textarea>
+      </label>
+
+      <button type="submit" class="btn">Send Message</button>
+
+      <p id="form-status" class="form-status" aria-live="polite"></p>
+    </form>
+  </main>
+
+  <footer>
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Sushant Bhairu More.</p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
