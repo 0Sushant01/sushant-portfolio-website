@@ -7,11 +7,16 @@
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
-  <!-- ===== Header / Nav ===== -->
+
+  <!-- ===== Header / Navigation ===== -->
   <header>
     <div class="container nav-container">
       <h1 class="logo"><a href="index.html">Sushant<span>.</span></a></h1>
+
+      <!-- Hamburger Icon -->
       <button id="menu-btn" aria-label="Toggle navigation">&#9776;</button>
+
+      <!-- Navigation Links -->
       <nav id="nav-links">
         <a class="active" href="index.html">Home</a>
         <a href="about.html">About</a>
@@ -24,10 +29,10 @@
   <!-- ===== Hero Section ===== -->
   <section class="hero">
     <div class="container hero-content">
-      <h2>SUSHANT MORE </h2>
+      <h2>Back-End Developer</h2>
       <p>
-        Hi, I'm <strong>Sushant More</strong> — a backend developer skilled in Django, REST APIs, and full-stack web apps.
-        I build secure and scalable applications for the web.
+        Hi, I'm <strong>Sushant More</strong> — a back-end developer skilled in Django, REST APIs, and full-stack web development.
+        I build secure, scalable, and elegant applications.
       </p>
       <a class="btn" href="assets/resume.pdf" target="_blank" rel="noopener">Download Resume</a>
     </div>
@@ -69,6 +74,18 @@
     </div>
   </footer>
 
-  <script src="js/script.js"></script>
+  <!-- ===== JavaScript ===== -->
+  <script>
+    // Dynamic year in footer
+    document.getElementById("year").textContent = new Date().getFullYear();
+
+    // Toggle nav menu on mobile
+    const menuBtn = document.getElementById("menu-btn");
+    const navLinks = document.getElementById("nav-links");
+
+    menuBtn?.addEventListener("click", () => {
+      navLinks.classList.toggle("show");
+    });
+  </script>
 </body>
 </html>
